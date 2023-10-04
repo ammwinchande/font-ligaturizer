@@ -259,7 +259,7 @@ def ligaturize_font(input_font_file, output_dir, ligature_font_file,
     else:
         name = font.familyname
     if prefix:
-        name = "%s %s" % (prefix, name)
+        name = "%s%s" % (name, prefix)
 
     update_font_metadata(font, name)
 
@@ -322,7 +322,7 @@ def parse_args():
              " all copied character glyphs; a value of 2 effectively disables"
              " character glyph scaling.")
     parser.add_argument("--prefix",
-        type=str, default="Liga",
+        type=str, default="Lig",
         help="String to prefix the name of the generated font with.")
     parser.add_argument("--output-name",
         type=str, default="",
