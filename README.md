@@ -69,3 +69,5 @@ Contributions always welcome! Please submit a Pull Request, or create an Issue i
 For more awesome programming fonts with ligatures, check out:
 1. [FiraCode](https://github.com/tonsky/FiraCode)
 2. [Hasklig](https://github.com/i-tu/Hasklig)
+
+fontforge -lang py -script ligaturize.py fonts/RobotoMono/RobotoMono-Light.ttf --output-dir='fonts/output/' --output-name='RobotoMono'
